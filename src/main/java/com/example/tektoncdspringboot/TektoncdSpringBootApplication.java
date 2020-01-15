@@ -8,6 +8,7 @@ public class TektoncdSpringBootApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(TektoncdSpringBootApplication.class, args);
+		System.out.print("Running!");
 	}
 
 }
