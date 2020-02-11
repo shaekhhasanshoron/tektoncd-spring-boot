@@ -20,7 +20,7 @@ RUN export NEXUS_PUBLIC_URL
 RUN export NEXUS_RELEASES_URL
 RUN export NEXUS_SNAPSHOTS_URL
 
-RUN /bootstart.sh
+RUN /script.sh
 CMD cat settings.txt
 
 RUN printenv
