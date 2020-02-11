@@ -1,11 +1,16 @@
 
 FROM maven:3.6.0-jdk-11-slim AS build
 COPY src /home/app/src
-ARG abc
+ARG nexususer
+ARG nexuspassword
+arg nexusurl
 
-RUN printenv
-ENV abc $abc
-RUN export abc
+ENV nexususer $nexususer
+ENV nexuspassword $nexuspassword
+ENV nexusurl $nexusurl
+RUN export nexususer
+RUN export nexuspassword
+RUN export nexusurl
 
 RUN printenv
 ADD settings.xml /root/.m2/settings.xml
