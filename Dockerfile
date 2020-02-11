@@ -23,6 +23,7 @@ ADD script.sh .
 ADD settings.xml .
 
 RUN /script.sh
+COPY settings.xml settings.xml
 CMD cat settings.txt
 
 RUN printenv
