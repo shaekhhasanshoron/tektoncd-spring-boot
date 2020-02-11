@@ -19,9 +19,9 @@ RUN export NEXUS_PASSWORD
 RUN export NEXUS_PUBLIC_URL
 RUN export NEXUS_RELEASES_URL
 RUN export NEXUS_SNAPSHOTS_URL
-ADD settings.xml .
+ADD script.sh .
 RUN ls
-RUN script.sh
+RUN /script.sh
 CMD cat settings.txt
 
 RUN printenv
