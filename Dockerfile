@@ -21,6 +21,7 @@ RUN export NEXUS_RELEASES_URL
 RUN export NEXUS_SNAPSHOTS_URL
 
 ADD script_to_set_settingfile.sh .
+ADD script_to_set_pomfile.sh .
 ADD settings.xml .
 ADD pom.xml .
 RUN /script_to_set_settingfile.sh
