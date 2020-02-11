@@ -342,4 +342,27 @@ To https://github.com/zeromsi/tektoncd-spring-boot.git
    755daf6..331fbc6  master -> master
 ]0;shahidul@shahidul: ~/Documents/nexus-tests/tektoncd-spring-boot[01;32mshahidul@shahidul[00m:[01;34m~/Documents/nexus-tests/tektoncd-spring-boot[00m$ git pushcommit -m "Update dockerfile and setting.xml, add script that replaces nexus-public urls, username and pass""[A]0;shahidul@shahidul: ~/Documents/nexus-tests/tektoncd-spring-boot[01;32mshahidul@shahidul[00m:[01;34m~/Documents/nexus-tests/tektoncd-spring-boot[00m$ [C[C[C[Cadd .[K
 [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
-]0;shahidul@shahidul: ~/Documents/nexus-tests/tektoncd-spring-boot[01;32mshahidul@shahidul[00m:[01;34m~/Docume
+]0;shahidul@shahidul: ~/Documents/nexus-tests/tektoncd-spring-boot[01;32mshahidul@shahidul[00m:[01;34m~/Documents/nexus-tests/tektoncd-spring-boot[00m$ git add .[1Ppushcommit -m "Update dockerfile and setting.xml, add script that replaces nexus-public urls, username and pass""
+[master 0a7b98d] Update dockerfile and setting.xml, add script that replaces nexus-public urls, username and pass
+ 1 file changed, 2 insertions(+)
+]0;shahidul@shahidul: ~/Documents/nexus-tests/tektoncd-spring-boot[01;32mshahidul@shahidul[00m:[01;34m~/Documents/nexus-tests/tektoncd-spring-boot[00m$ git commit -m "Update dockerfile and setting.xml, add script that replaces nexus-public urls, username and pass""[A]0;shahidul@shahidul: ~/Documents/nexus-tests/tektoncd-spring-boot[01;32mshahidul@shahidul[00m:[01;34m~/Documents/nexus-tests/tektoncd-spring-boot[00m$ [C[C[C[Cadd .[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Ppushcommit -m "Update dockerfile and setting.xml, add script that replaces nexus-public urls, username and pass""[A]0;shahidul@shahidul: ~/Documents/nexus-tests/tektoncd-spring-boot[01;32mshahidul@shahidul[00m:[01;34m~/Documents/nexus-tests/tektoncd-spring-boot[00m$ [C[C[C[Cpush[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Username for 'https://github.com': ze  z zeromsi
+Password for 'https://zeromsi@github.com': 
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/3)   Writing objects:  66% (2/3)   Writing objects: 100% (3/3)   Writing objects: 100% (3/3), 408 bytes | 408.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+To https://github.com/zeromsi/tektoncd-spring-boot.git
+   331fbc6..0a7b98d  master -> master
+]0;shahidul@shahidul: ~/Documents/nexus-tests/tektoncd-spring-boot[01;32mshahidul@shahidul[00m:[01;34m~/Documents/nexus-tests/tektoncd-spring-boot[00m$ git pushcommit -m "Update dockerfile and setting.xml, add script that replaces nexus-public urls, username and pass""[A]0;shahidul@shahidul: ~/Documents/nexus-tests/tektoncd-spring-boot[01;32mshahidul@shahidul[00m:[01;34m~/Documents/nexus-tests/tektoncd-spring-boot[00m$ [C[C[C[Cadd .[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+]0;shahidul@shahidul: ~/Documents/nexus-tests/tektoncd-spring-boot[01;32mshahidul@shahidul[00m:[01;34m~/Documents/nexus-tests/tektoncd-spring-boot[00m$ git add .[1Ppushcommit -m "Update dockerfile and setting.xml, add script that replaces nexus-public urls, username and pass""
+[master 04f3e69] Update dockerfile and setting.xml, add script that replaces nexus-public urls, username and pass
+ 3 files changed, 25 insertions(+), 3 deletions(-)
+ mode change 100644 => 100755 script_to_set_pomfile.sh
+]0;shahidul@shahidul: ~/Documents/nexus-tests/tektoncd-spring-boot[01;32mshahidul@shahidul[00m:[01;34m~/Documents/nexus-tests/tektoncd-spring-boot[00m$ git commit -m "Update dockerfile and setting.xml, add script that replaces nexus-public urls, username and pass""[A]0;shahidul@shahidul: ~/Documents/nexus-tests/tektoncd-spring-boot[01;32mshahidul@shahidul[00m:[01;34m~/Documents/nexus-tests/tektoncd-spring-boot[00m$ [C[C[C[Cadd .[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
