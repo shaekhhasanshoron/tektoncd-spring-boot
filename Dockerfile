@@ -7,18 +7,21 @@ ARG nexus-public-url
 ARG nexus-releases-url
 ARG nexus-snapshots-url
 
-ENV nexususer $nexususer
-ENV nexuspassword $nexuspassword
-ENV nexus-public-url $nexus-public-url
-ENV nexus-releases-url $nexus-releases-url
-ENV nexus-snapshots-url $nexus-snapshots-url
+ENV NEXUS_USER $nexususer
+ENV NEXUS_PASSWORD $nexuspassword
+ENV NEXUS_PUBLIC_URL $nexus-public-url
+ENV NEXUS_RELEASES_URL $nexus-releases-url
+ENV NEXUS_SNAPSHOTS_URL $nexus-snapshots-url
 
 
-RUN export nexususer
-RUN export nexuspassword
-RUN export nexus-public-url
-RUN export nexus-releases-url
-RUN export nexus-snapshots-url
+RUN export NEXUS_USER
+RUN export NEXUS_PASSWORD
+RUN export NEXUS_PUBLIC_URL
+RUN export NEXUS_RELEASES_URL
+RUN export NEXUS_SNAPSHOTS_URL
+
+RUN /bootstart.sh
+CMD cat settings.txt
 
 RUN printenv
 ADD settings.xml /root/.m2/settings.xml
