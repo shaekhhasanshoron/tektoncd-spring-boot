@@ -19,21 +19,16 @@ RUN export NEXUS_PASSWORD
 RUN export NEXUS_PUBLIC_URL
 RUN export NEXUS_RELEASES_URL
 RUN export NEXUS_SNAPSHOTS_URL
-ADD script.sh .
+
+ADD script_to_set_settingfile.sh .
 ADD settings.xml .
-
-RUN /script.sh
-COPY settings.xml settings.xml
-CMD cat settings.txt
-
-RUN printenv
+ADD pom.xml .
+RUN /script_to_set_settingfile.sh
+RUN /script_to_set_pomfile.sh
 ADD settings.xml /root/.m2/settings.xml
 COPY pom.xml /home/app
+RUN ls
 RUN mvn -f /home/app/pom.xml clean package
-
-
-
-
 FROM openjdk:11-jre-slim
 COPY --from=build /home/app/target/tektoncd-spring-boot-0.0.1-SNAPSHOT.jar /usr/local/lib/tektoncd-spring-boot.jar
 EXPOSE 8080

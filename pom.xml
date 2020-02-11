@@ -50,13 +50,13 @@
     <repository>
       <id>nexus</id>
       <name>Releases</name>
-      <url>http://34.66.205.222.nip.io:32001/repository/maven-releases</url>
+      <url>${NEXUS_RELEASES_URL}</url>
     </repository>
     <snapshotRepository>
       <id>nexus</id>
       <name>Snapshot</name>
-      <url>http://34.66.205.222.nip.io:32001/repository/maven-snapshots</url>
+      <url>${NEXUS_SNAPSHOTS_URL}</url>
     </snapshotRepository>
-  </distributionManagement>
+</distributionManagement>
 
 </project>
