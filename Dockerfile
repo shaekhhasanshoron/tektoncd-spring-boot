@@ -25,8 +25,6 @@ ADD script_to_set_pomfile.sh .
 ADD settings.xml .
 ADD pom.xml .
 RUN /script_to_set_settingfile.sh
-
-RUN [“chmod”, “+x”, "script_to_set_pomfile.sh”]
 RUN /script_to_set_pomfile.sh
 ADD settings.xml /root/.m2/settings.xml
 COPY pom.xml /home/app

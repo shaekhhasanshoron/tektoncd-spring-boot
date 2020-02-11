@@ -318,4 +318,28 @@ Password for 'https://zeromsi@github.com':
 Counting objects: 7, done.
 Delta compression using up to 8 threads.
 Compressing objects:  14% (1/7)   Compressing objects:  28% (2/7)   Compressing objects:  42% (3/7)   Compressing objects:  57% (4/7)   Compressing objects:  71% (5/7)   Compressing objects:  85% (6/7)   Compressing objects: 100% (7/7)   Compressing objects: 100% (7/7), done.
-Writing objects:  14% (1/7)   Writing objects:  28% (2/7)   Writing objects:  42% (3/7)   Writing objects:  57% (4/7)   Writing objects
+Writing objects:  14% (1/7)   Writing objects:  28% (2/7)   Writing objects:  42% (3/7)   Writing objects:  57% (4/7)   Writing objects:  71% (5/7)   Writing objects:  85% (6/7)   Writing objects: 100% (7/7)   Writing objects: 100% (7/7), 1.07 KiB | 1.07 MiB/s, done.
+Total 7 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/4)[Kremote: Resolving deltas:  25% (1/4)[Kremote: Resolving deltas:  50% (2/4)[Kremote: Resolving deltas:  75% (3/4)[Kremote: Resolving deltas: 100% (4/4)[Kremote: Resolving deltas: 100% (4/4), completed with 4 local objects.[K
+To https://github.com/zeromsi/tektoncd-spring-boot.git
+   2907799..755daf6  master -> master
+]0;shahidul@shahidul: ~/Documents/nexus-tests/tektoncd-spring-boot[01;32mshahidul@shahidul[00m:[01;34m~/Documents/nexus-tests/tektoncd-spring-boot[00m$ git pushcommit -m "Update dockerfile and setting.xml, add script that replaces nexus-public urls, username and pass""[A]0;shahidul@shahidul: ~/Documents/nexus-tests/tektoncd-spring-boot[01;32mshahidul@shahidul[00m:[01;34m~/Documents/nexus-tests/tektoncd-spring-boot[00m$ [C[C[C[Cadd .[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+]0;shahidul@shahidul: ~/Documents/nexus-tests/tektoncd-spring-boot[01;32mshahidul@shahidul[00m:[01;34m~/Documents/nexus-tests/tektoncd-spring-boot[00m$ git add .[1Ppushcommit -m "Update dockerfile and setting.xml, add script that replaces nexus-public urls, username and pass""
+[master 331fbc6] Update dockerfile and setting.xml, add script that replaces nexus-public urls, username and pass
+ 2 files changed, 28 insertions(+), 1 deletion(-)
+]0;shahidul@shahidul: ~/Documents/nexus-tests/tektoncd-spring-boot[01;32mshahidul@shahidul[00m:[01;34m~/Documents/nexus-tests/tektoncd-spring-boot[00m$ git commit -m "Update dockerfile and setting.xml, add script that replaces nexus-public urls, username and pass""[A]0;shahidul@shahidul: ~/Documents/nexus-tests/tektoncd-spring-boot[01;32mshahidul@shahidul[00m:[01;34m~/Documents/nexus-tests/tektoncd-spring-boot[00m$ [C[C[C[Cadd .[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Ppush
+Username for 'https://github.com': zeromsi
+Password for 'https://zeromsi@github.com': 
+Counting objects: 4, done.
+Delta compression using up to 8 threads.
+Compressing objects:  25% (1/4)   Compressing objects:  50% (2/4)   Compressing objects:  75% (3/4)   Compressing objects: 100% (4/4)   Compressing objects: 100% (4/4), done.
+Writing objects:  25% (1/4)   Writing objects:  50% (2/4)   Writing objects:  75% (3/4)   Writing objects: 100% (4/4)   Writing objects: 100% (4/4), 691 bytes | 691.00 KiB/s, done.
+Total 4 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/3)[Kremote: Resolving deltas:  33% (1/3)[Kremote: Resolving deltas:  66% (2/3)[Kremote: Resolving deltas: 100% (3/3)[Kremote: Resolving deltas: 100% (3/3), completed with 3 local objects.[K
+To https://github.com/zeromsi/tektoncd-spring-boot.git
+   755daf6..331fbc6  master -> master
+]0;shahidul@shahidul: ~/Documents/nexus-tests/tektoncd-spring-boot[01;32mshahidul@shahidul[00m:[01;34m~/Documents/nexus-tests/tektoncd-spring-boot[00m$ git pushcommit -m "Update dockerfile and setting.xml, add script that replaces nexus-public urls, username and pass""[A]0;shahidul@shahidul: ~/Documents/nexus-tests/tektoncd-spring-boot[01;32mshahidul@shahidul[00m:[01;34m~/Documents/nexus-tests/tektoncd-spring-boot[00m$ [C[C[C[Cadd .[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+]0;shahidul@shahidul: ~/Documents/nexus-tests/tektoncd-spring-boot[01;32mshahidul@shahidul[00m:[01;34m~/Docume
