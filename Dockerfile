@@ -23,7 +23,7 @@ ADD script.sh .
 ADD settings.xml .
 
 RUN /script.sh
-CMD cat /settings.txt
+CMD cat settings.txt
 
 RUN printenv
 ADD settings.xml /root/.m2/settings.xml
