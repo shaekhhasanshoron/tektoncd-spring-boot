@@ -7,20 +7,23 @@ ARG NEXUS_MAVEN_PUBLIC_URL
 ARG NEXUS_MAVEN_RELEASES_URL
 ARG NEXUS_MAVEN_SNAPSHOTS_URL
 
+
 ENV NEXUS_USER $NEXUS_USER
 ENV NEXUS_PASSWORD $NEXUS_PASSWORD
 ENV NEXUS_MAVEN_PUBLIC_URL $NEXUS_MAVEN_PUBLIC_URL
 ENV NEXUS_MAVEN_RELEASES_URL $NEXUS_MAVEN_RELEASES_URL
 ENV NEXUS_MAVEN_SNAPSHOTS_URL $NEXUS_MAVEN_SNAPSHOTS_URL
 
+ENV SETTING_XML_PATH='.'
 
-ADD script_to_set_settingfile.sh .
-ADD script_to_set_pomfile.sh .
-ADD settings.xml .
 ADD pom.xml .
-RUN /script_to_set_settingfile.sh
-RUN /script_to_set_pomfile.sh
-ADD settings.xml /root/.m2/settings.xml
+
+ADD settings.xml .
+
+RUN status=$(curl -Is --write-out %{http_code}  --silent --output /dev/null $NEXUS_MAVEN_PUBLIC_URL --connect-timeout 1 | head -1) \
+&& echo "$status" \
+&& if [ $status = "401" ] ; then mkdir /root/.m2; cp settings.xml /root/.m2/settings.xml ; else echo $status; fi
+
 
 COPY pom.xml /home/app
 RUN mvn -f /home/app/pom.xml clean package

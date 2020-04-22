@@ -4,7 +4,7 @@
       <!--This sends everything else to /public -->
       <id>nexus</id>
       <mirrorOf>*</mirrorOf>
-      <url>${NEXUS_PUBLIC_URL}</url>
+      <url>${NEXUS_MAVEN_PUBLIC_URL}</url>
     </mirror>
   </mirrors>
   <profiles>
